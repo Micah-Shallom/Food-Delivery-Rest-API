@@ -4,7 +4,7 @@ from django.contrib.auth.base_user import BaseUserManager
 from django.utils.translation import gettext_lazy as _
 from phonenumber_field.modelfields import PhoneNumberField
 
-# Create your models here.
+# Create your models here
 
 class CustomUserManager(BaseUserManager):
 
