@@ -28,6 +28,16 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+SWAGGER_SETTINGS = {
+   'SECURITY_DEFINITIONS': {
+      'Bearer': {
+            'type': 'apiKey',
+            'name': 'Authorization',
+            'in': 'header'
+      }
+   }
+}
+
 
 # Application definition
 
@@ -44,7 +54,8 @@ INSTALLED_APPS = [
 
     # thirrdparty apps
     'rest_framework',
-    'djoser'
+    'djoser',
+    'drf_yasg'
 ]
 
 AUTH_USER_MODEL = 'authentication.User'

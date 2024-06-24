@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from rest_framework import generics, status
 from rest_framework.response import Response
+from drf_yasg.utils import swagger_auto_schema
 from .models import User
 from . import serializers
 
@@ -18,6 +19,7 @@ class HelloAuthView(generics.GenericAPIView):
 class UserCreateView(generics.GenericAPIView):
     serializer_class = serializers.UserCreationSerializer
 
+    @swagger_auto_schema(operation_summary="Create a user account")
     def post(self, request):
         data =  request.data
         serializer = self.serializer_class(data=data)
