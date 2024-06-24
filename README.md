@@ -1,5 +1,5 @@
-## PIZZA DELIVERY API
-This is a REST API for a Pizza delivery service built for fun and learning with FastAPI, SQLAlchemy and PostgreSQL. 
+## FOOD DELIVERY API
+This is a REST API for a Food delivery service built for fun and learning with Django_REST_Framework, SQLite. 
 
 ## ROUTES TO IMPLEMENT
 | METHOD | ROUTE | FUNCTIONALITY |ACCESS|
